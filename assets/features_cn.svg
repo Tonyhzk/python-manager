@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&amp;display=swap');
+      .card-title { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 18px; font-weight: 700; fill: #1a1a2e; }
+      .card-point { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; fill: #4a4a6a; }
+      .card-icon { font-size: 36px; }
+      .dot { fill: #7c5cbf; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f0ecf9"/>
+      <stop offset="100%" stop-color="#e8f0fe"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8f6ff"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cbf"/>
+      <stop offset="100%" stop-color="#6a8cef"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#7c5cbf" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="400" rx="16" fill="url(#bg)"/>
+
+  <!-- 卡片 1: PyInstaller 打包 -->
+  <g transform="translate(24, 28)" filter="url(#shadow)">
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
+    <text x="136" y="62" text-anchor="middle" class="card-icon">📦</text>
+    <text x="136" y="100" text-anchor="middle" class="card-title">PyInstaller 打包</text>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <circle cx="40" cy="148" r="4" class="dot"/>
+    <text x="52" y="152" class="card-point">GUI 图形界面一键打包</text>
+    <circle cx="40" cy="184" r="4" class="dot"/>
+    <text x="52" y="188" class="card-point">自定义图标、资源文件</text>
+    <text x="52" y="206" class="card-point">和输出目录</text>
+    <circle cx="40" cy="238" r="4" class="dot"/>
+    <text x="52" y="242" class="card-point">支持拖拽文件操作</text>
+  </g>
+
+  <!-- 卡片 2: 环境克隆 -->
+  <g transform="translate(318, 28)" filter="url(#shadow)">
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
+    <text x="136" y="62" text-anchor="middle" class="card-icon">🧬</text>
+    <text x="136" y="100" text-anchor="middle" class="card-title">环境克隆</text>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <circle cx="40" cy="148" r="4" class="dot"/>
+    <text x="52" y="152" class="card-point">暴力克隆 — 完整复制</text>
+    <text x="52" y="170" class="card-point">整个环境</text>
+    <circle cx="40" cy="200" r="4" class="dot"/>
+    <text x="52" y="204" class="card-point">纯净克隆 — 仅复制</text>
+    <text x="52" y="222" class="card-point">核心包</text>
+    <circle cx="40" cy="252" r="4" class="dot"/>
+    <text x="52" y="256" class="card-point">标准依赖模式</text>
+    <text x="52" y="274" class="card-point">（仅 whl 包）</text>
+  </g>
+
+  <!-- 卡片 3: 依赖分析 -->
+  <g transform="translate(612, 28)" filter="url(#shadow)">
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
+    <text x="136" y="62" text-anchor="middle" class="card-icon">🔍</text>
+    <text x="136" y="100" text-anchor="middle" class="card-title">依赖分析</text>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <circle cx="40" cy="148" r="4" class="dot"/>
+    <text x="52" y="152" class="card-point">自动分析 .py 文件的</text>
+    <text x="52" y="170" class="card-point">import 导入语句</text>
+    <circle cx="40" cy="200" r="4" class="dot"/>
+    <text x="52" y="204" class="card-point">支持 requirements.txt</text>
+    <text x="52" y="222" class="card-point">和 pyproject.toml</text>
+    <circle cx="40" cy="252" r="4" class="dot"/>
+    <text x="52" y="256" class="card-point">一键安装缺失的依赖库</text>
+  </g>
+
+  <!-- 卡片 4: 便携式 Python -->
+  <g transform="translate(906, 28)" filter="url(#shadow)">
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
+    <text x="136" y="62" text-anchor="middle" class="card-icon">🚀</text>
+    <text x="136" y="100" text-anchor="middle" class="card-title">便携式 Python</text>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <circle cx="40" cy="148" r="4" class="dot"/>
+    <text x="52" y="152" class="card-point">支持在线和离线两种</text>
+    <text x="52" y="170" class="card-point">创建模式</text>
+    <circle cx="40" cy="200" r="4" class="dot"/>
+    <text x="52" y="204" class="card-point">可打包项目文件到</text>
+    <text x="52" y="222" class="card-point">便携包中</text>
+    <circle cx="40" cy="252" r="4" class="dot"/>
+    <text x="52" y="256" class="card-point">支持跨机器一键部署</text>
+  </g>
+</svg>
