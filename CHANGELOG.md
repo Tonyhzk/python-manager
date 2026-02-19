@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [3.0.0] - 2026-02-20
+## [2.0.0] - 2026-02-20
 
 ### First Release
 

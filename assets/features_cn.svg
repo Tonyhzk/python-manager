@@ -2,25 +2,25 @@
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&amp;display=swap');
-      .card-title { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 18px; font-weight: 700; fill: #1a1a2e; }
-      .card-point { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; fill: #4a4a6a; }
+      .card-title { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 18px; font-weight: 700; fill: #e8e8f0; }
+      .card-point { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; fill: #b0b0c8; }
       .card-icon { font-size: 36px; }
-      .dot { fill: #7c5cbf; }
+      .dot { fill: #9c7cdf; }
     </style>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#f0ecf9"/>
-      <stop offset="100%" stop-color="#e8f0fe"/>
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
     </linearGradient>
     <linearGradient id="card1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f8f6ff"/>
+      <stop offset="0%" stop-color="#2a2a4a"/>
+      <stop offset="100%" stop-color="#222240"/>
     </linearGradient>
     <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7c5cbf"/>
-      <stop offset="100%" stop-color="#6a8cef"/>
+      <stop offset="0%" stop-color="#9c7cdf"/>
+      <stop offset="100%" stop-color="#7a9cf7"/>
     </linearGradient>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#7c5cbf" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.30"/>
     </filter>
   </defs>
 
@@ -29,11 +29,11 @@
 
   <!-- 卡片 1: PyInstaller 打包 -->
   <g transform="translate(24, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">📦</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">PyInstaller 打包</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">GUI 图形界面一键打包</text>
     <circle cx="40" cy="184" r="4" class="dot"/>
@@ -45,11 +45,11 @@
 
   <!-- 卡片 2: 环境克隆 -->
   <g transform="translate(318, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">🧬</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">环境克隆</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">暴力克隆 — 完整复制</text>
     <text x="52" y="170" class="card-point">整个环境</text>
@@ -63,11 +63,11 @@
 
   <!-- 卡片 3: 依赖分析 -->
   <g transform="translate(612, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">🔍</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">依赖分析</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">自动分析 .py 文件的</text>
     <text x="52" y="170" class="card-point">import 导入语句</text>
@@ -80,11 +80,11 @@
 
   <!-- 卡片 4: 便携式 Python -->
   <g transform="translate(906, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">🚀</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">便携式 Python</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">支持在线和离线两种</text>
     <text x="52" y="170" class="card-point">创建模式</text>

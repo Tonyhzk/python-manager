@@ -2,25 +2,25 @@
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap');
-      .card-title { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 17px; font-weight: 700; fill: #1a1a2e; }
-      .card-point { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 12.5px; fill: #4a4a6a; }
+      .card-title { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 17px; font-weight: 700; fill: #e8e8f0; }
+      .card-point { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 12.5px; fill: #b0b0c8; }
       .card-icon { font-size: 36px; }
-      .dot { fill: #7c5cbf; }
+      .dot { fill: #9c7cdf; }
     </style>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#f0ecf9"/>
-      <stop offset="100%" stop-color="#e8f0fe"/>
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
     </linearGradient>
     <linearGradient id="card1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f8f6ff"/>
+      <stop offset="0%" stop-color="#2a2a4a"/>
+      <stop offset="100%" stop-color="#222240"/>
     </linearGradient>
     <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7c5cbf"/>
-      <stop offset="100%" stop-color="#6a8cef"/>
+      <stop offset="0%" stop-color="#9c7cdf"/>
+      <stop offset="100%" stop-color="#7a9cf7"/>
     </linearGradient>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#7c5cbf" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.30"/>
     </filter>
   </defs>
 
@@ -29,11 +29,11 @@
 
   <!-- Card 1: PyInstaller Packaging -->
   <g transform="translate(24, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">📦</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">PyInstaller Packaging</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <!-- Points -->
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">One-click packaging</text>
@@ -47,11 +47,11 @@
 
   <!-- Card 2: Environment Cloning -->
   <g transform="translate(318, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">🧬</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">Environment Cloning</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">Full clone — brute force</text>
     <text x="52" y="168" class="card-point">complete copy</text>
@@ -65,11 +65,11 @@
 
   <!-- Card 3: Dependency Analysis -->
   <g transform="translate(612, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">🔍</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">Dependency Analysis</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">Auto-analyze .py file</text>
     <text x="52" y="168" class="card-point">import statements</text>
@@ -83,11 +83,11 @@
 
   <!-- Card 4: Portable Python -->
   <g transform="translate(906, 28)" filter="url(#shadow)">
-    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#e0d8f0" stroke-width="1"/>
+    <rect width="272" height="344" rx="16" fill="url(#card1)" stroke="#3a3a5c" stroke-width="1"/>
     <rect width="272" height="5" rx="3" y="0" fill="url(#accent1)"/>
     <text x="136" y="62" text-anchor="middle" class="card-icon">🚀</text>
     <text x="136" y="100" text-anchor="middle" class="card-title">Portable Python</text>
-    <line x1="56" y1="116" x2="216" y2="116" stroke="#e0d8f0" stroke-width="1"/>
+    <line x1="56" y1="116" x2="216" y2="116" stroke="#3a3a5c" stroke-width="1"/>
     <circle cx="40" cy="148" r="4" class="dot"/>
     <text x="52" y="152" class="card-point">Online &amp; offline</text>
     <text x="52" y="168" class="card-point">creation modes</text>
