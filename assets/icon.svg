@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Python 蓝色渐变 -->
+    <linearGradient id="pyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#93c5fd" />
+    </linearGradient>
+
+    <!-- Python 黄色渐变 -->
+    <linearGradient id="pyYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fcd34d" />
+    </linearGradient>
+
+    <!-- 齿轮渐变 -->
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#c7d2fe" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- 内阴影 -->
+    <filter id="innerShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+      <feOffset dx="0" dy="2" result="offsetBlur" />
+      <feComposite in="SourceGraphic" in2="offsetBlur" operator="over" />
+    </filter>
+
+    <!-- 外发光 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- 投影 -->
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1e1b4b" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- 圆角方形背景 -->
+  <rect x="8" y="8" width="240" height="240" rx="48" ry="48" fill="url(#bgGrad)" />
+
+  <!-- 背景装饰光晕 -->
+  <ellipse cx="100" cy="90" rx="80" ry="60" fill="#818cf8" opacity="0.15" />
+  <ellipse cx="160" cy="170" rx="70" ry="50" fill="#a78bfa" opacity="0.1" />
+
+  <!-- 齿轮（右下角，管理概念） -->
+  <g transform="translate(178, 178)" filter="url(#dropShadow)">
+    <g fill="url(#gearGrad)" opacity="0.35">
+      <circle cx="0" cy="0" r="36" />
+      <!-- 6个齿 -->
+      <rect x="-6" y="-50" width="12" height="16" rx="3" />
+      <rect x="-6" y="34" width="12" height="16" rx="3" />
+      <g transform="rotate(60)">
+        <rect x="-6" y="-50" width="12" height="16" rx="3" />
+        <rect x="-6" y="34" width="12" height="16" rx="3" />
+      </g>
+      <g transform="rotate(-60)">
+        <rect x="-6" y="-50" width="12" height="16" rx="3" />
+        <rect x="-6" y="34" width="12" height="16" rx="3" />
+      </g>
+    </g>
+    <circle cx="0" cy="0" r="16" fill="#4f46e5" opacity="0.5" />
+  </g>
+
+  <!-- Python 双蛇标志（居中偏左上） -->
+  <g transform="translate(118, 118)" filter="url(#glow)">
+    <!-- 上半蛇（蓝色） -->
+    <path d="M-2,-52 C-2,-52 -32,-52 -32,-28 C-32,-4 -2,-4 -2,-4 L2,-4 C2,-4 32,-4 32,-28 L32,-36 C32,-36 32,-52 16,-52 L-2,-52 Z"
+          fill="url(#pyBlue)" />
+    <!-- 蓝蛇眼 -->
+    <circle cx="-14" cy="-32" r="5" fill="#1e1b4b" opacity="0.6" />
+    <circle cx="-14" cy="-32" r="2.5" fill="#e0e7ff" />
+
+    <!-- 下半蛇（黄色） -->
+    <path d="M2,52 C2,52 32,52 32,28 C32,4 2,4 2,4 L-2,4 C-2,4 -32,4 -32,28 L-32,36 C-32,36 -32,52 -16,52 L2,52 Z"
+          fill="url(#pyYellow)" />
+    <!-- 黄蛇眼 -->
+    <circle cx="14" cy="32" r="5" fill="#78350f" opacity="0.5" />
+    <circle cx="14" cy="32" r="2.5" fill="#fef3c7" />
+  </g>
+
+  <!-- 小箭头装饰（表示管理/流转） -->
+  <g opacity="0.6">
+    <!-- 左上小箭头 -->
+    <path d="M42,68 L52,58 L52,65 L68,65 L68,71 L52,71 L52,78 Z"
+          fill="#c7d2fe" opacity="0.5" />
+    <!-- 右下小箭头 -->
+    <path d="M214,188 L204,178 L204,185 L188,185 L188,191 L204,191 L204,198 Z"
+          fill="#c7d2fe" opacity="0.4" />
+  </g>
+</svg>

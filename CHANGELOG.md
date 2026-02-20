@@ -17,3 +17,5 @@ All notable changes to this project will be documented in this file.
 - **Dark/Light Theme** - Toggle between dark and light themes
 - **Drag & Drop** - Drop `.py` files and folders directly into the window (requires tkinterdnd2)
 - **Multi-Python Detection** - Auto-detect installed Python versions for environment cloning
+- **Project Icon** - Added SVG project icon
+- **Project Structure** - Moved startup scripts to `src/python_manager/` directory
